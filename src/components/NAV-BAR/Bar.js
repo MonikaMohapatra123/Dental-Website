@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
-import DesktopNavBar from './DesktopNavBar';  // Import your NavBar component
+// import DesktopNavBar from './DesktopNavBar';  // Import your NavBar component
 
 
 import Services from './Services';  // Example page for Services
