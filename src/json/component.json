@@ -1,0 +1,119 @@
+{
+  "components": [
+    { "id":0,
+      "name": "Bar",
+      "type": "Bar"
+    },
+    {
+      "id": 1,
+      "name": "HeroSection",
+      "phone": "+91 9876543210",
+      "buttonText": "Book Appointment",
+      "heading": "AO Dentistry",
+      "subheading": "Experience The Advanced Dentistry",
+      "images": [
+        "/images/hero-1.webp",
+        "/images/hero-2.webp",
+        "/images/hero-3.webp",
+        "/images/hero-4.webp",
+        "/images/hero-5.webp",
+        "/images/hero-6.webp",
+        "/images/hero-7.webp",
+        "/images/hero-8.webp",
+        "/images/hero-9.webp",
+        "/images/hero-10.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Doctor",
+      "image1": "/images/doctor-1.webp",
+      "image2": "/images/doctor-2.webp",
+      "heading": "Top rated dentists in India",
+      "text1": "Dr. Onkar and Dr. Aneesha live by the motto 'educate to treat'!",
+      "text2": "Dr. Onkar is an expert in Laser Dentistry and Micro Dentistry Implants along with his better half Dr. Aneesha, who is a Cosmetic Dentist herself.",
+      "text3": "They both believe that quality creates long-lasting relationships, which is the core value at AO Dentistry.",
+      "buttonText": "About Us",
+      "buttonIcon": "bi-chevron-right"
+    },
+    {
+      "id": 3,
+      "name": "MovingText",
+      "image1": "/images/trophy.webp",
+      "image2": "/images/logosign.webp",
+      "heading": "Excellence In Dentistry Award",
+      "sliderText": "Best Dental Clinic In Maharashtra, India"
+    },
+    { "id":7,
+      "name": "FinalSlider",
+      "dependencies": ["SliderOne", "SliderTwo", "SliderThree"]
+    },
+   
+   
+    {
+      "id": 4,
+      "name": "MovingSlider",
+      "items": [
+        "Dental System",
+        "Advance Technology",
+        "Maintenance of Different Topics",
+        "Laser Dentistry"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Carousel",
+      "images": [
+        { "src": "teeth-1.png", "alt": "teeth 1" },
+        { "src": "teeth-2.png", "alt": "teeth 2" },
+        { "src": "teeth-3.png", "alt": "teeth 3" },
+        { "src": "teeth-4.png", "alt": "teeth 4" },
+        { "src": "teeth-5.png", "alt": "teeth 5" },
+        { "src": "teeth-6.png", "alt": "teeth 6" },
+        { "src": "teeth-7.png", "alt": "teeth 7" }
+      ]
+    },
+    {
+      "name": "SliderVideo",
+      "type": "SliderVideo"
+    },
+    {
+      "name": "FooterImage",
+      "type": "FooterImage"
+    },
+    {
+      "id": 6,
+      "name": "Footer",
+      "logoText": "A O D  E  N  T  I  S  T  R  Y",
+      "tagline": "A step above the rest",
+      "socialIcons": ["facebook", "youtube", "instagram", "linkedin"],
+      "sections": {
+        "Surgical": ["Dental Implants", "All on 6 Implants", "Painless single visit root canals"],
+        "Cosmetic": ["Porcelain veneers", "Teeth whitening", "Invisible Aligners", "Full mouth rehabilitation"],
+        "General": [
+          "Cleanings and examination",
+          "Single visit crowns and bridges",
+          "Bondings and tooth-coloured fillings",
+          "Braces",
+          "Pediatric dentistry"
+        ],
+        "Quick Links": [
+          "About Us",
+          "Our Services",
+          "Video Testimonials",
+          "International Clients",
+          "Awards",
+          "Gallery",
+          "Contact",
+          "Blog"
+        ],
+        "Contact": {
+          "Phone": "+91 9876543321",
+          "Email": "dentistry@gmail.com",
+          "Address": "Office No-1, Seasons Business Square, Seasons Rd, Sanewadi, Pune, Maharashtra 4111007",
+          "Working Hours": "Mon-Sat 10:00 am - 8:00 pm"
+        }
+      }
+    }
+  ]
+}

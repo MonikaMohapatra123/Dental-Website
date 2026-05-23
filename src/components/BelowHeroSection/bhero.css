@@ -1,0 +1,149 @@
+
+.main {
+    background-color: hsl(345, 83%, 77%);
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
+.main p {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.text-size {
+    font-size: 60px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center; 
+}
+
+.logoimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px; 
+}
+
+.logoimage :nth-child(1),
+.logoimage :nth-child(2) {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    background-color: white;
+    margin-right: 40px; 
+}
+
+.bhero-container {
+    position: relative;
+    text-align: center;
+}
+
+.bhero-slider {
+    position: absolute;
+    top: 50%; 
+    left: -100%;
+    width: 10%;
+    height: 45px;
+    background-color: whitesmoke;
+    animation: slide 6s linear infinite; 
+    transform: translateY(-50%); 
+    opacity: 0.1;
+    font-size: 16px; /* Default font-size */
+}
+
+@keyframes slide {
+    0% {
+        left: -80%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -80%;
+    }
+}
+
+.bhero-text {
+    font-size: 64px;
+    color: #333;
+    z-index: 1; 
+    opacity: 0.2;
+    font-weight: bold;
+}
+
+@media (max-width: 676px) {
+    .main {
+        padding: 10px; 
+        min-height: 100vh;
+    }
+    
+    .main p {
+        font-size: 17px; 
+        margin-left: 0; 
+    }
+
+    .logoimage {
+        flex-direction: row; 
+        margin-top: 20px;
+    }
+
+    .logoimage :nth-child(1),
+    .logoimage :nth-child(2) {
+        width: 80px; 
+        height: 80px; 
+        border-radius: 50%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .text-size {
+        font-size: 23px; 
+    }
+
+    /* Override the bhero-text font-size with !important to ensure it's applied */
+    .bhero-container .bhero-text {
+        font-size: 30px !important;
+        opacity: 1 !important; /* Make sure opacity is set to 1 for visibility */
+    }
+
+    /* Adjust font-size for bhero-slider */
+    .bhero-slider {
+        font-size: 8px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main p {
+        font-size: 30px; 
+    }
+
+    .logoimage :nth-child(1),
+    .logoimage :nth-child(2) {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .text-size {
+        font-size: 45px; 
+    }
+
+    /* Override the bhero-text font-size with !important to ensure it's applied */
+    .bhero-container .bhero-text {
+        font-size: 20px !important;
+        opacity: 1 !important; /* Ensure it's visible */
+    }
+
+    /* Adjust font-size for bhero-slider */
+    .bhero-slider {
+        font-size: 12px !important;
+    }
+}

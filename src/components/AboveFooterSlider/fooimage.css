@@ -1,0 +1,31 @@
+.foo-img {
+    margin: 20px;
+    padding: 10px;
+}
+
+.foo-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px; /* Adds space between images */
+}
+
+.image {
+    border-radius: 20px;
+    width: 100%; /* Makes images responsive */
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width:676px){
+    .foo-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Ensures vertical alignment */
+        width: 100%; /* Ensures full width for better responsiveness */
+    }
+    .slider .slick-slide {
+        display: flex !important;
+        justify-content: flex-start !important; /* Align images to the left */
+    }
+    
+}

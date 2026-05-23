@@ -1,0 +1,98 @@
+
+.doctor-container{
+    display: flex;
+   
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: black;
+    height:100vh;
+  
+    width: 98.9vw;
+    margin-bottom: 20px;
+   
+    
+}
+.doctor-container img{
+     width:440px;
+    height:520px; 
+    border-radius: 60px;
+    padding: 30px;
+    margin-top: -20px;
+}
+.doctor-container p{
+    color: white;
+  
+}
+.doctor-text{
+    color: pink;
+   
+}
+.doctor-container button{
+    color:black;
+    background-color: pink;
+    border-radius: 30px;
+    padding: 15px 15px;
+    width: 150px;
+}
+.doctor-container h2{
+    margin-top: 38px;
+}
+
+
+ @media (max-width:676px){
+    .doctor-container{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        padding:10px;
+        width: 100vw;
+        margin-right: 20px;
+      
+} 
+
+.doctor-container img{
+    width: 200px !important;
+    height: 250px !important;
+    padding: 30px  !important;
+   margin: 20px -20px;
+   
+   
+    
+}
+    .doctor-text{
+        margin-right:30px;
+       font-size: 15px;
+    }
+
+ }
+
+  
+
+
+
+@media (max-width: 1024px) {
+    .doctor-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        height: auto;
+    }
+
+    .doctor-container img {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .doctor-container p {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .doctor-container button {
+        padding: 12px 18px;
+        font-size: 16px;
+        width: 160px;
+    }
+} 

@@ -1,0 +1,55 @@
+
+.ResponsiveContainer {
+    width: 100%;
+    background-color: black;
+    color: #e4a0b7;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative; /* Add this to ensure nav list is positioned below it */
+    z-index: 1900;
+    width: 100vw;
+  }
+  .ResponsiveContainer img{
+    width: 170px;
+    height: 28px;
+    font-size: 44px;
+  }
+  
+  .ResponsiveContainer button {
+    background-color: transparent;
+    color: #ca1652;
+  }
+  
+  .resnav-list {
+    position: absolute;
+    top: 100%; /* This positions the nav list directly below the navbar */
+    left: 0;
+    width: 100%;
+    background-color:#db366d;
+    color:black;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .resnav-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid white;
+  }
+  
+  .resnav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+   
+  }
+
+  
+
+
+ 
+  

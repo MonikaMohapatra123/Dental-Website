@@ -1,0 +1,52 @@
+.flogo {
+    position:fixed;
+    bottom: 20px; /* Adjusted for better spacing from the bottom */
+    right: 20px; /* Adjusted for better spacing from the right */
+    z-index: 999; /* Ensure the floating buttons are always on top */
+    display: flex;
+    flex-direction: column; /* Stack the icons vertically */
+    gap: 10px; /* Space between the icons */
+}
+
+.bi-whatsapp,
+.bi-telephone {
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bi-whatsapp {
+    background-color: green;
+}
+
+.bi-telephone {
+    background-color: pink;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 676px) {
+    .flogo {
+        bottom: 20px; /* Ensure spacing remains from the bottom on mobile */
+        right: 20px; /* Ensure spacing remains from the right */
+        flex-direction: column; /* Stack the icons horizontally on mobile */
+        gap: 15px; /* Increase space between icons on smaller screens */
+        overflow: hidden;
+    }
+
+    .bi-whatsapp,
+    .bi-telephone {
+        width: 40px; /* Reduce the size of the icons */
+        height: 40px; /* Reduce the size of the icons */
+        padding: 10px; /* Adjust padding for smaller icons */
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+}
+
+

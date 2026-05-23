@@ -1,0 +1,44 @@
+{
+    "1":{
+        "id":"1",
+         "page":"Nav",
+         "logo":"./images/logo.webp",
+         "menu":[
+            {
+                "name":"Home",
+                "link":"/"
+            },
+            {
+                "name":"Company",
+                "link":"/company",
+                "submenu":[
+                    {
+                        "name":"Contact Us",
+                        "link":"/contact"
+                    },
+                    {
+                        "name":"Leadership",
+                        "link":"/leadership"
+                    },
+                    {
+                        "name":"Carrer",
+                        "link":"/carrer"
+
+                    }
+                ]
+            },
+            {
+                "name":"Projects",
+                "link":"/projects"
+            },
+            {
+               "name":"Services",
+               "link":"/services"
+            },
+            { 
+                "name":"News",
+                "link":"/news"
+            }
+         ]
+    }
+}

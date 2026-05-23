@@ -1,0 +1,96 @@
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    background-color: black;
+    color:rgb(252, 157, 193);
+    font-weight: bold;
+    font-size: 16px;
+    position: fixed;
+    z-index: 1900;
+    width: 100vw;
+}
+.logo-container img{
+    width:280px;
+    height: 50px;
+    margin-left: 20px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    gap: 80px;
+    padding-right:18px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(228, 33, 107);
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+    color: #fff;  /* Change the text color on hover */
+    transform: scale(1.1);  /* Slightly increase size on hover */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(228, 33, 107);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.submenu {
+    display: none; /* Hide submenu by default */
+    list-style: none;
+    padding: 0;
+    position: absolute; /* Position the submenu below the parent */
+    top: 100%; /* Position it right below the parent menu item */
+    left: 0;
+    background-color: black; /* Set background color of submenu */
+    border-radius: 5px; /* Optional: rounded corners for submenu */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+    z-index: 10; /* Make sure the submenu is on top */
+}
+
+.submenu.show {
+    display: block; /* Show submenu when active */
+    margin-top:15px;
+}
+
+.submenu-item {
+    padding: 10px 20px;
+}
+
+.submenu-link {
+    text-decoration: none;
+    color: rgb(228, 33, 107);
+    transition: color 0.3s ease;
+}
+
+.submenu-link:hover {
+    color: #fff; /* Change submenu link color on hover */
+    background-color: rgb(228, 33, 107); /* Optional: background color on hover */
+}
+
+  
+
